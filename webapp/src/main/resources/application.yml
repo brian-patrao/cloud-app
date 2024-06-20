@@ -1,0 +1,24 @@
+spring:
+  main:
+    banner-mode: off
+  datasource:
+    url: jdbc:mysql://localhost:3306/csye6225?createDatabaseIfNotExist=true
+    username: root
+    password: password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: mysql
+    show-sql: true
+server:
+  port: 80
+  servlet:
+    context-path: /
+gcp:
+  project_id: csye6225-dev-415021
+  topic_name: verify_email
+  email_time_duration: 2
+app:
+  environment: dev
+
